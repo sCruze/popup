@@ -1,0 +1,278 @@
+.modal_wrapper {
+  padding: 32px;
+  padding-bottom: 0;
+  position: relative;
+  left: 50%;
+  font-family: Lab Grotesque;
+  max-width: 552px;
+  height: 476px;
+  border-radius: 30px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 88px;
+  margin-left: -276px; }
+  .modal_wrapper button {
+    cursor: pointer; }
+  .modal_wrapper .modal_header {
+    display: flex;
+    justify-content: space-between; }
+    .modal_wrapper .modal_header h1 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 40px; }
+    .modal_wrapper .modal_header .modal_close {
+      display: block;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      position: relative; }
+    .modal_wrapper .modal_header .modal_close:before, .modal_wrapper .modal_header .modal_close:after {
+      content: "";
+      display: block;
+      width: 23px;
+      height: 3.1px;
+      border-radius: 6px;
+      position: absolute;
+      top: 50%;
+      margin-top: -1.3px;
+      left: 0;
+      margin-left: -2.4px; }
+    .modal_wrapper .modal_header .modal_close:before {
+      background: #EA0029;
+      transform: rotate(45deg); }
+    .modal_wrapper .modal_header .modal_close:after {
+      background: #EA0029;
+      transform: rotate(-45deg); }
+  .modal_wrapper .modal_description {
+    font-family: Lab Grotesque;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+    margin-top: 16px;
+    margin-bottom: 24px; }
+  .modal_wrapper .modal_form {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px; }
+    .modal_wrapper .modal_form .input__block {
+      transition: 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column; }
+      .modal_wrapper .modal_form .input__block input {
+        border: 1px solid #DFE3E6;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 10px 8px;
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #BEC5CC;
+        margin: 8px 0;
+        outline: none;
+        transition: 0.3s ease-in-out; }
+      .modal_wrapper .modal_form .input__block input:hover {
+        border: 1px solid #000000; }
+      .modal_wrapper .modal_form .input__block input:focus {
+        border: 1px solid #DFE3E6;
+        color: #000000; }
+    .modal_wrapper .modal_form button {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #EA0029;
+      background: transparent;
+      border: 0;
+      outline: none;
+      transition: 0.3s ease-in-out; }
+    .modal_wrapper .modal_form button:hover {
+      color: #F53A31; }
+    .modal_wrapper .modal_form button:checked {
+      color: #EA0029; }
+  .modal_wrapper .models__deposit-funds .title__deposit {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 16px; }
+  .modal_wrapper .models__deposit-funds .models__deposit {
+    display: flex;
+    border-bottom: 1px solid #DFE3E6;
+    padding: 16px 0;
+    /*Checkmark of the fake checkbox*/
+    /*Hide the checkmark by default*/
+    /*Unhide on the checked state*/ }
+    .modal_wrapper .models__deposit-funds .models__deposit input {
+      opacity: 0; }
+    .modal_wrapper .models__deposit-funds .models__deposit label {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      outline: none;
+      transition: 0.3s ease-in-out;
+      border: 1px solid #DFE3E6;
+      margin-right: 11px; }
+    .modal_wrapper .models__deposit-funds .models__deposit label::before,
+    .modal_wrapper .models__deposit-funds .models__deposit label::after {
+      position: absolute;
+      content: "";
+      transition: 0.3s ease-in-out;
+      display: inline-block; }
+    .modal_wrapper .models__deposit-funds .models__deposit label:hover {
+      border: 1px solid #000000 !important; }
+    .modal_wrapper .models__deposit-funds .models__deposit label::after {
+      height: 5px;
+      width: 9px;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      transform: rotate(-50deg);
+      color: #fff;
+      left: 3.5px;
+      top: 4px; }
+    .modal_wrapper .models__deposit-funds .models__deposit input[type="checkbox"] + label::after {
+      content: none; }
+    .modal_wrapper .models__deposit-funds .models__deposit input[type="checkbox"]:checked + label::after {
+      content: ""; }
+    .modal_wrapper .models__deposit-funds .models__deposit input:checked + label {
+      border: 1px solid #FF5E56 !important;
+      background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56; }
+  .modal_wrapper .modal_selector-tax {
+    margin-top: 28px;
+    display: flex;
+    align-items: center; }
+    .modal_wrapper .modal_selector-tax p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000000; }
+    .modal_wrapper .modal_selector-tax .modal_selector-tax-list-btn {
+      display: flex;
+      margin-left: 32px; }
+      .modal_wrapper .modal_selector-tax .modal_selector-tax-list-btn button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 12px;
+        width: 73px;
+        height: 36px;
+        left: 176px;
+        top: 312px;
+        background: #EEF0F2;
+        border-radius: 50px;
+        border: 0;
+        color: #000000;
+        outline: none; }
+      .modal_wrapper .modal_selector-tax .modal_selector-tax-list-btn :nth-child(1) {
+        margin-right: 16px; }
+  .modal_wrapper .modal_add-tax {
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
+    border-radius: 6px;
+    border: 0;
+    color: #ffffff;
+    outline: none;
+    padding: 16px 0;
+    font-style: normal;
+    font-weight: 500;
+    transition: 0.3s;
+    margin: 40px 0 32px 0; }
+  .modal_wrapper .modal_add-tax:hover {
+    background: #EA0029 !important;
+    box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33) !important; }
+
+.btn-active {
+  background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56 !important;
+  color: #ffffff !important;
+  transition: 0.3s ease-in-out; }
+
+.btn-active:hover {
+  background: #EA0029 !important;
+  box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33) !important; }
+
+.input__error {
+  color: #EA0029 !important; }
+  .input__error input {
+    border: 1px solid #EA0029 !important; }
+
+@media (max-width: 320px) {
+  .modal_wrapper {
+    left: 0;
+    max-width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    position: relative;
+    padding: 16px; }
+    .modal_wrapper .modal_header h1 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px; }
+    .modal_wrapper .modal_header .modal_close {
+      width: 12px;
+      height: 12px; }
+    .modal_wrapper .modal_header .modal_close::before, .modal_wrapper .modal_header .modal_close::after {
+      width: 13px;
+      margin-left: -1.4px; }
+    .modal_wrapper .modal_description {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px; }
+    .modal_wrapper .modal_form .modal_form-title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px; }
+    .modal_wrapper .input__block button {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px; }
+    .modal_wrapper .models__deposit-funds .title__deposit {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px; }
+    .modal_wrapper .models__deposit-funds .models__deposit p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px; }
+    .modal_wrapper .modal_selector-tax {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      margin: 0;
+      margin-top: 24px; }
+      .modal_wrapper .modal_selector-tax p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px; }
+      .modal_wrapper .modal_selector-tax .modal_selector-tax-list-btn {
+        display: flex;
+        margin: 24px 0 40px 0; }
+        .modal_wrapper .modal_selector-tax .modal_selector-tax-list-btn button:nth-child(2) {
+          margin-left: 8px; } }
+.text-grey {
+  color: #808080;
+  font-size: 14px;
+  line-height: 24px; }
+
+.modal_wrapper-min-height {
+  min-height: 476px !important; }
+
+/*# sourceMappingURL=ModalTaxDeduction.css.map */
